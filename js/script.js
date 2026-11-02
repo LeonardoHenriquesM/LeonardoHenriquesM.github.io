@@ -24,3 +24,18 @@ document.querySelectorAll('.proj a[data-title]').forEach(a => {
 
 document.getElementById('close').addEventListener('click', () => pop.close());
 pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+burger.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+});
+
+menu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  });
+});
