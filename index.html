@@ -9,6 +9,16 @@
 <script src="js/script.js" defer></script>
 </head>
 <body>
+
+<dialog id="pop" aria-labelledby="pop-title">
+  <button id="close" aria-label="Fermer">✕</button>
+  <img id="pop-img" alt="">
+  <h3 id="pop-title"></h3>
+  <p id="pop-desc"></p>
+  <div id="pop-tags"></div>
+  <a id="pop-link" class="btn p" target="_blank" rel="noopener">Voir le site ↗</a>
+</dialog>
+
 <div class="w">
 <nav><b>PortFolio</b><div><a href="#about">À propos</a><a href="#parcours">Parcours</a><a href="#services">Services</a><a href="#projets">Projets</a></div></nav>
 
@@ -63,10 +73,8 @@
 <div class="tag"></div>
 <h2>Projets</h2>
 <div class="proj">
-<article class="box"><a href="#" data-video="videos/sushifast.mp4"><div class="shot">Capture du projet</div><h3>Refonte de l’action jeunesse</h3><p>Nouvelle identité visuelle de l’action jeunesse de la mairie de Trilport.</p><span class="pill">Figma</span><span class="pill">Suite Adobe</span><span class="pill">Canva</span></a></article>
-<article class="box"><a href="#" data-video="videos/sushifast.mp4"><div class="shot">Capture du projet</div><h3>Modélisation 3D</h3><p>Modélisation d’une structure en 3D pour la mairie de Trilport.</p><span class="pill">Blender</span></a></article>
-<article class="box"><a href="#" data-video="videos/sushifast.mp4"><div class="shot">Capture du projet</div><h3>La Barque aux Livres</h3><p>Optimisation de la base de données, amélioration de l’UX et ajout d’animations.</p><span class="pill">React</span><span class="pill">PHP</span><span class="pill">MySQL</span></a></article>
-<article class="box"><a href="#" data-video="videos/sushifast.mp4"><div class="shot">Capture du projet</div><h3>Site de la mairie</h3><p>Gestion et maintenance du site de la mairie de Trilport.</p><span class="pill">Spring Boot</span></a></article>
+<article class="box"><a href="#" data-title="SushiFast" data-desc="Site de restauration autour des sushis : consultation du menu et commande en ligne." data-img="assets/images/sushifast.png" data-link="https://leonardohenriquesm.github.io/SushiFast/" data-tags="React,Vite"><div class="shot"><img src="assets/images/sushifast.png" alt="Capture du site SushiFast" onerror="this.remove()">Capture du projet</div><h3>SushiFast</h3><p>Site de commande de sushis en ligne.</p><span class="pill">React</span><span class="pill">Vite</span></a></article>
+<article class="box"><a href="#" data-title="Pesticides" data-desc="Site web sur le thème des pesticides (à compléter)." data-img="assets/images/pesticides.png" data-link="https://leonardohenriquesm.github.io/Pesticides/" data-tags="HTML,CSS,JavaScript"><div class="shot"><img src="assets/images/pesticides.png" alt="Capture du site Pesticides" onerror="this.remove()">Capture du projet</div><h3>Pesticides</h3><p>Site d’information sur les pesticides.</p><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></a></article>
 </div>
 </section>
 
